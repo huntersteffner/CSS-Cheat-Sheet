@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cheat Sheet</title>
+  </head>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <body>
+    <header>
+      <h1>CSS Syntax Cheet Sheet</h1>
+      <p>
+        Here is a little cheat sheet of a few CSS Tricks. Go ahead and click on
+        one and see what happens.
+      </p>
+    </header>
+    <section class="container">
+      <article class="card transform">
+        <h3>Transform</h3>
+        <pre>
+            .transform {
+                transform: translateX(2rem)
+            }
+        </pre>
+      </article>
+      <article class="card flex-row">
+        <h3>Flex Row</h3>
+        <pre>
+            .row {
+                display: flex;
+                flex-direction: row;
+            }
+        </pre>
+      </article>
+      <article class="card tool-tip">
+        <h3>Tool Tip</h3>
+        <pre>
+            span:hover::before {
+                position: absolute;
+                transform: translate(1rem, -1rem);
+                padding: .5rem .7rem;
+                background-color: #13293d;
+                color: #fff;
+                border-radius: 5px;
+              }
+        </pre>
+      </article>
+      <article class="card pseudo-class">
+        <h3>Pseudo Class</h3>
+        <pre>
+            .pseudo:hover {
+                background-color: #fff;
+            }
+        </pre>
+      </article>
+      <article class="card pseudo-element">
+        <h3>Psuedo Element</h3>
+        <pre>
+            .pseudo::after {
+                color: #fff;
+                content: 'These are words.'
+            }
+        </pre>
+      </article>
+      <article class="card rotate">
+        <h3>Rotate</h3>
+        <pre>
+            .rotate {
+                transform: rotate(15deg)
+            }
+        </pre>
+      </article>
+    </section>
+    <footer>
+      <p>&copy; Hunter Steffner Inc.</p>
+    </footer>
+  </body>
+</html>

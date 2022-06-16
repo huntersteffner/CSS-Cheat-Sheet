@@ -1,0 +1,125 @@
+/* Variables */
+
+:root {
+    --main-color: #5330a6;
+    --secondary-color: #7e81a0;
+}
+/* HTML Elements */
+body {
+    background: #e7dddd;
+}
+
+header {
+    color: var(--main-color);
+    text-align: center;
+    margin: 2rem;
+}
+
+footer {
+    background-color: (var(--main-color));
+    text-align: center;
+    color: var(--main-color);
+}
+h1 {
+    font-size: 3.5rem;
+}
+p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* classes */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+.card {
+    color: #fff;
+    width: 40rem;
+    height: 30rem;
+    margin: .2rem;
+    background: linear-gradient(var(--main-color), var(--secondary-color));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all .2s ease-in;
+    
+}
+
+.card h3 {
+    font-size: 5rem;
+    padding: 1rem;
+}
+.card pre {
+    font-size: 1.9rem;
+    user-select: all;
+    text-shadow: .2rem .2rem 3px #000;
+}
+
+/* Pseudo Classes */
+.card:hover {
+    transform: scale(1.02);
+    border: 1px black solid;
+    box-shadow: 2px 3px #444;
+    text-shadow: 1px 1px .3px #5d5656;
+}
+
+/* Media queries */
+
+
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 19rem;
+        height: 19rem;
+    }
+    .card h3 {
+        font-size: 2rem;
+    }
+    .card pre {
+        font-size: .9rem;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 922px) {
+    h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        width: 16rem;
+        height: 16rem;
+    }
+    .card h3 {
+        font-size: 1.5rem;
+    }
+    .card pre {
+        font-size: .75rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+}
